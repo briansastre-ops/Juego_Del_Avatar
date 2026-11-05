@@ -72,18 +72,18 @@ const listaAtaquesGlobales = [ATAQUE_PUNIO, ATAQUE_PATADA, ATAQUE_BARRIDA];
 let avatares = [];
 
 // Instanciamos los personajes individualmente
-let zuko = new Personaje("zuko", "Zuko", "../img/zuko.jpg", "Fuego", "/Programacion-IV/Programacion-Miercoles/Practicas/img/zuko-mapa.webp");
-let katara = new Personaje("katara", "Katara", "../img/katara.jpg", "Agua", "/Programacion-IV/Programacion-Miercoles/Practicas/img/katara-mapa.png");
-let aang = new Personaje("aang", "Aang", "../img/aang.jpg", "Aire", "/Programacion-IV/Programacion-Miercoles/Practicas/img/aang-mapa.webp");
-let toph = new Personaje("toph", "Toph", "../img/toph.jpg", "Tierra", "/Programacion-IV/Programacion-Miercoles/Practicas/img/toph-mapa.png");
+let zuko = new Personaje("zuko", "Zuko", "./img/zuko.jpg", "Fuego", "./img/zuko-mapa.webp");
+let katara = new Personaje("katara", "Katara", "./img/katara.jpg", "Agua", "./img/katara-mapa.png");
+let aang = new Personaje("aang", "Aang", "./img/aang.jpg", "Aire", "./img/aang-mapa.webp");
+let toph = new Personaje("toph", "Toph", "./img/toph.jpg", "Tierra", "./img/toph-mapa.png");
 
 // Cargamos los objetos en el array
 avatares.push(zuko, katara, aang, toph);
 
 // Instancias nuevas
-let sokka = new Personaje("sokka", "Sokka", "../img/sokka.jpg", "No Maestro", "/Programacion-IV/Programacion-Miercoles/Practicas/img/sokka-mapa.png");
-let iroh = new Personaje("iroh", "Iroh", "../img/iroh.jpg", "Fuego", "/Programacion-IV/Programacion-Miercoles/Practicas/img/iroh-mapa.png");
-let suki = new Personaje("suki", "Suki", "../img/suki.jpg", "Guerrera Kyoshi", "/Programacion-IV/Programacion-Miercoles/Practicas/img/suki-mapa.webp");
+let sokka = new Personaje("sokka", "Sokka", "./img/sokka.jpg", "No Maestro", "./img/sokka-mapa.png");
+let iroh = new Personaje("iroh", "Iroh", "./img/iroh.jpg", "Fuego", "./img/iroh-mapa.png");
+let suki = new Personaje("suki", "Suki", "./img/suki.jpg", "Guerrera Kyoshi", "./img/suki-mapa.webp");
 
 // Los empujas al array
 avatares.push(sokka, iroh, suki);
@@ -136,7 +136,7 @@ const lienzo = mapa.getContext("2d");
 const mapaBackground = new Image();
 
 mapaBackground.src =
-    "/Programacion-IV/Programacion-Miercoles/Practicas/img/fotoMapa1.jpg";
+    "./img/fotoMapa1.jpg";
     mapaBackground.onload = () => {
     dibujarMapa();
 };
